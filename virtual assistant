@@ -1,0 +1,103 @@
+import os
+import pyttsx3
+
+pyttsx3.speak(" WELCOME TO MENU DRIVEN PROGRAM ")
+print(" \n                                   WELCOME                         \n ")
+pyttsx3.speak(" HELLO, I AM  YOUR VIRTUAL ASSISTANT ")
+print(" \n                       HI I AM YOUR VIRTUAL ASSISTANT              \n ")
+pyttsx3.speak("HERE IS THE LIST OF APPLICATIONS IN WHICH I CAN HELP YOU ON YOUR SYSTEM ")
+print("\n                   LIST OF APPLICATIONS , I CAN HELP YOU IN         \n ")
+print()
+print("\n                          1. CHROME                                 \n")
+print("\n                          2. INTERNET EXPLORER                      \n")
+print("\n                          3. ITUNES                                 \n")
+print("\n                          4. VLC PLAYER                             \n")
+print("\n                          5. WINDOWS MEDIA PLAYER                   \n")
+print("\n                          6. REAL PLAYER                            \n")
+print("\n                          7. ACROBAT READER DC                      \n")
+print("\n                          8. WORD PAD                               \n")
+print("\n                          9. MS PAINT                              \n")
+print("\n                          10. CODE BLOCKS                           \n")
+print("\n                          11. VIEW MATE                             \n")
+print("\n                          12. WEB CAM                               \n")
+print("\n                          13. KEILUV4                               \n")
+print("\n                          14. NOTEPAD                               \n")
+print()
+while True:
+	print("                              HOW CAN I HELP YOU?? :", end=""            )
+	pyttsx3.speak(" how can i help you ")
+	p=input()
+	if(("run" in p) or ("execute" in p) or ("launch" in p) or ("open" in p)) and (("chrome" in p) or ("browser" in p) or ("web browser" in p)):
+		pyttsx3.speak("\n launching chrome \n")
+		os.system(" chrome ")
+		print()
+	elif(("run" in p) or ("execute" in p) or ("launch" in p) or ("open" in p)) and ("explore" in p):
+		pyttsx3.speak("\n launching internet explore \n")
+		os.system(" iexplore ")
+		print()
+	elif(("run" in p) or ("execute" in p) or ("launch" in p) or ("open" in p)) and ("itune" in p):
+		pyttsx3.speak("\n launching itunes \n")
+		os.system(" itunes ")
+		print()
+	elif(("run" in p) or ("execute" in p) or ("launch" in p) or ("open" in p)) and ("vlc" in p):
+		pyttsx3.speak("\n launching vlc player\n")
+		os.system(" vlc ")
+		print()
+	elif(("run" in p) or ("execute" in p) or ("launch" in p) or ("open" in p)) and ("window media player" in p):
+		pyttsx3.speak("\n launching windows media player \n ")
+		os.system(" wmplayer ")
+		print()
+	elif(("run" in p) or ("execute" in p) or ("launch" in p) or ("open" in p)) and ("real player" in p):
+		pyttsx3.speak("\n launching realplay \n")
+		os.system(" realplay ")
+		print()
+	elif(("run" in p) or ("execute" in p) or ("launch" in p) or ("open" in p)) and ("adobe" in p):
+		pyttsx3.speak("\n launching adobe acrobat reader \n ")
+		os.system(" acrord32 ")
+		print()
+	elif(("run" in p) or ("execute" in p) or ("launch" in p) or ("open" in p)) and ("wordpad" in p):
+		pyttsx3.speak("\n launching wordpad \n ")
+		os.system(" wordpad ")
+		print()
+	elif(("run" in p) or ("execute" in p) or ("launch" in p) or ("open" in p)) and ("paint" in p):
+		pyttsx3.speak("\n launching ms paint \n ")
+		os.system(" mspaint ")
+		print()
+	elif(("run" in p) or ("execute" in p) or ("launch" in p) or ("open" in p)) and ("code blocks" in p):
+		pyttsx3.speak("\n launching code blocks \n")
+		os.system(" codeblocks ")
+		print()
+	elif(("run" in p) or ("execute" in p) or ("launch" in p) or ("open" in p)) and ("view mate" in p):
+		pyttsx3.speak("\n launching viewmate \n")
+		os.system(" viewmate ")
+		print()
+	elif(("run" in p) or ("execute" in p) or ("launch" in p) or ("open" in p)) and (("youcam" in p) or ("webcam" in p)):
+		pyttsx3.speak("\n launching webcam \n")
+		os.system(" youcam ")
+	elif(("run" in p) or ("execute" in p) or ("launch" in p) or ("open" in p)) and (("keil uvision4" in p) or ("keiluv4" in p)):
+		pyttsx3.speak("\n launching keil uvision4 \n")
+		os.system(" uv4 ")
+	elif(("run" in p) or ("execute" in p) or ("launch" in p) or ("open" in p)) and (("notepad" in p) or ("text editor" in p) or ("editor" in p)):
+	        pyttsx3.speak("\n launching notepad \n")
+	        os.system("notepad")
+	elif(("quit" in p) or ("stop" in p) or ("close" in p)):
+		print("\n                               THANK YOU FOR USING VIRTUAL ASSISTANT                          \n")
+		pyttsx3.speak(" thank you for using virtual assistant ")
+		print("\n                               HAVE A NICE DAY SEE YOU AGAIN                                  \n")
+		pyttsx3.speak("  have a nice day , see you again ")
+		break
+	else:
+		print(" SORRY!! , I CANT UNDERSTAND YOUR COMMAND , CAN YOU PLEASE CHECK YOUR LIST OF APPLICATIONS AND TRY AGAIN ")
+		pyttsx3.speak(" sorry!! ,  i cant understand your command , can you please check your list of applications and try again ")
+        	
+
+
+	
+	
+
+
+
+
+
+
+
